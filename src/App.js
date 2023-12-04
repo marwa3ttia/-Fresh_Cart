@@ -16,15 +16,15 @@ function App() {
   let routers =  createBrowserRouter([
 
   { path : '' , element : <Layout/> , children : [
-    {index : true , element: <Home/>},
-    {index : 'cart' , element: <Cart/>},
-    {index : 'about' , element: <About/>},
-    {index : 'products' , element: <Products/>},
-    {index : 'categories' , element: <Categories/>},
-    {index : 'brands' , element: <Brands/>},
-    {index : 'productdetails' , element: <ProductDetails/>},
-    {index : 'register' , element: <Register/>},
-    {index : 'login' , element: <Login/>},
+    {index : '/' , element: <Home/>},
+    {path : 'cart' , element: <Cart/>},
+    {path : 'about' , element: <About/>},
+    {path : 'products' , element: <Products/>},
+    {path : 'categories' , element: <Categories/>},
+    {path : 'brands' , element: <Brands/>},
+    {path : 'productdetails' , element: <ProductDetails/>},
+    {path : 'register' , element: <Register/>},
+    {path : 'login' , element: <Login/>},
   ]}
   ])
 
